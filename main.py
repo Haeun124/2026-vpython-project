@@ -17,3 +17,21 @@ cylinder (axis= vec (0,0,1),size=vec(16,16,16),pos=vec(0,-19,-6.7),color=color.g
 box(size=vec(44,40,1),pos=vec(0,23.7,6),texture ="https://i.pinimg.com/736x/c7/c3/ca/c7c3ca6aab59451cb89752b2d421bbf8.jpg")
 box(size=vec(52,82,16),pos=vec(0,0,0),color=vec(192,224,252))
 arrow(pos=vec(100, 100, 100), axis=vec(1, 0, 0), color=color.orange)
+
+
+
+triangleshapew = [[1.5,0], [0,2.3],[-1.5,0], [1.5,0]]
+linepath = [vec(0,-9.7,-4), vec(0,-9.7,10)]
+wedge = extrusion(shape= triangleshapew, path= linepath)
+
+triangleshaped = [[-2.3,0], [0,1.5],[0,-1.5], [-2.3,0]]
+linepath = [vec(9,-19,-4), vec(9,-19,10)]
+wedge = extrusion(shape= triangleshaped, path= linepath)
+
+triangleshapea = [[2.3,0], [0,1.5],[0,-1.5], [2.3,0]]
+linepath = [vec(-9,-19,-4), vec(-9,-19,10)]
+wedge = extrusion(shape= triangleshapea, path= linepath)
+
+triangleshapex = [[1.5,0], [0,-2.3],[-1.5,0], [1.5,0]]
+linepath = [vec(0,-28,-4), vec(0,-28,10)]
+wedge = extrusion(shape= triangleshapex, path= linepath)
