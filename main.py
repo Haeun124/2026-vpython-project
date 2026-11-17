@@ -1,3 +1,4 @@
+
 import random
 c=cylinder(size=vec(44,2,2),pos=vec(-21.3,-37,7.5),color=color.red,opacity=0.5)
 
@@ -25,12 +26,12 @@ wedge = extrusion(shape= triangleshapex, path= linepath)
 
 
 b=box(size=vec(44,40,1),pos=vec(0,17,8.5),texture = "https://i.postimg.cc/QCCDtvNh/IMG-0282.jpg")
-a=["https://i.postimg.cc/d3QHbTBH/IMG-0283.jpg","https://i.postimg.cc/9QxL9McB/IMG-0287.jpg", "https://i.postimg.cc/d3QHbTBH/IMG-0283.jpg" ]
-
+a=["https://i.postimg.cc/d3QHbTBH/IMG-0283.jpg","https://i.postimg.cc/1RjYjXqk/IMG-0287.jpg", "https://i.postimg.cc/3RnJTmT7/IMG-0288.jpg" ]
+i = 0
 while True :
     rate(100)
     k = keysdown()
-    if ' ' in k :
-        for i in range(3) : 
-            b.texture=a[i]
+    if ' ' in k :  
+        b.texture=a[i%3]
         c.color =vec(random.random(),random.random(),random.random())
+        i = i + 1
