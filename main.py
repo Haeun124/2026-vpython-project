@@ -1,10 +1,10 @@
 import random
 c=cylinder(size=vec(44,2,2),pos=vec(-21.3,-37,7.5),color=color.red,opacity=0.5)
 
-box(size=vec(50,80,15),pos = vec(0,0,0),color=vec(255,243,242))           
-cylinder (axis= vec (0,0,1),size=vec(16,25,25),pos=vec(0,-19,-6.7),color=color.red)
-cylinder (axis= vec (0,0,1),size=vec(16,16,16),pos=vec(0,-19,-6),color=color.green)
-box(size=vec(52,82,16),pos=vec(0,0,0),color=vec(192,224,252))
+    
+cylinder (axis= vec (0,0,1),size=vec(16,25,25),pos=vec(0,-19,-6.7),color=vec(255/255,220/255,234/255))
+cylinder (axis= vec (0,0,1),size=vec(16,16,16),pos=vec(0,-19,-6))
+box(size=vec(52,82,16),pos=vec(0,0,0),color=vec(201/255,236/255,255/255))
 
 triangleshapew = [[1.5,0], [0,2.3],[-1.5,0], [1.5,0]]
 linepath = [vec(0,-9.7,-4), vec(0,-9.7,10)]
