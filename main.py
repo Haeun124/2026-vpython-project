@@ -1,5 +1,3 @@
-Web VPython 3.2
-      
 import random
 c=cylinder(size=vec(44,2,2),pos=vec(-21.3,-37,7.5),color=color.red,opacity=0.5)
 b=box(size=vec(44,40,1),pos=vec(0,17,8.5),texture = "https://i.postimg.cc/rpS02r1h/IMG-0302.jpg")
@@ -24,16 +22,6 @@ wedge = extrusion(shape= triangleshapea, path= linepath)
 triangleshapex = [[1.5,0], [0,-2.3],[-1.5,0], [1.5,0]]
 linepath = [vec(0,-28,-4), vec(0,-28,10)]
 wedge = extrusion(shape= triangleshapex, path= linepath)
-
-
-
-
-
-clicker=([triangleshapew,triangleshaped,triangleshapea,triangleshapex])
-while True :
-    rate(100)
-    k = keysdown()
-    if 'a' in k :
             
 i = 0
 while True :
