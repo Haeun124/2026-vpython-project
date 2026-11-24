@@ -1,3 +1,5 @@
+Web VPython 3.2
+      
 import random
 c=cylinder(size=vec(44,2,2),pos=vec(-21.3,-37,7.5),color=color.red,opacity=0.5)
 b=box(size=vec(44,40,1),pos=vec(0,17,8.5),texture = "https://i.postimg.cc/rpS02r1h/IMG-0302.jpg")
@@ -38,8 +40,7 @@ while True :
     rate(5)
     k = keysdown()
     if ' ' in k :  
-        b.texture=a[i%8]
+        b.texture=a[i%9]
         c.color =vec(random.random(),random.random(),random.random())
         i = i + 1
-
 
